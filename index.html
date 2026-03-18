@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lynx Cases - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section>
+     <header>
+    <img src="llll.jpg" alt="Lynx Cases Logo" class="logo" width="130" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+</section>
+ 
+<section>
+   <main class="product-section">
+    <h1>Featured Phone Case</h1>
+    <div class="product-card">
+      <img src="frosted.jpeg" alt="Phone Case" width="200"/>
+      <h2>Frosted Shield</h2>
+      <p>₦5500</p>
+      <button onclick="addToCart('Frosted Shield', 5500)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="Metallic blue.webp" alt="Blue Shield Case" width="200" />
+      <h2>Blue Shield</h2>
+      <p>₦5500</p>
+      <button onclick="addToCart('Blue Shield', 5500)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="pink case.jpg" alt="Pink Swirly" width="200" />
+      <h2>Pink Swirlyy</h2>
+      <p>₦5500</p>
+      <button onclick="addToCart('Pink Swirly', 5500)">Add to Cart</button>
+    </div>
+  </main>
+</section>
+  
+<section>
+   <!-- Cart Icon -->
+  <div class="cart-icon-floating" onclick="toggleCartModal()">🛒 <span id="cart-count">0</span></div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close" onclick="toggleCartModal()">&times;</span>
+      <h3>Your Cart</h3>
+      <ul id="modal-cart-items"></ul>
+      <p>Total: ₦<span id="modal-cart-total">0.00</span></p>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <div id="popup-message">Item added to cart!</div>
+</section>
+ 
+<section>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>Lynx Cases</h3>
+            <p>Snap. Protect. Style. Our mission is to deliver quality phone cases that combine fashion and protection.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Policies</h4>
+            <ul>
+                <li><a href="shipping.html">Shipping Policy</a></li>
+                <li><a href="returns.html">Returns & Refunds</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Lynx Cases. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
