@@ -1,4 +1,7 @@
 # Lynx Cases Website
+Live Demo: https://funmiakitoye.github.io/lynx-cases-website/
+
+## Description
 A custom-built e-commerce website for a phone case brand (Lynx Cases), designed with a minimalist and playful style.
 
 ## Features
